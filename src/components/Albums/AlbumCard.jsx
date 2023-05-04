@@ -17,7 +17,7 @@ const AlbumCard = ({ album, selectAlbum }) => {
                 <Card.Img variant="top" src={album.image} className="card-img" />
                 <Card.Body>
                     <Card.Title>{album.name}</Card.Title>
-                    <div><b>Artist: </b>{artist.name}</div>
+                    <div><b>Artist: </b>{artist?.name}</div>
                     <div><b>Year: </b>{album.releaseYear}</div>
                     <div className="d-flex justify-content-end">
                         <Button

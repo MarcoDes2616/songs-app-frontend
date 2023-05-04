@@ -12,7 +12,7 @@ const Home = () => {
 
     const filterSongs = (itemId, itemFilter) => {
         const filtered = songs.filter(song => 
-            song[itemFilter].some(item => item.id === itemId)
+            song[itemFilter]?.some(item => item.id === itemId)
         )
         setSongsFiltered(filtered);
     }
